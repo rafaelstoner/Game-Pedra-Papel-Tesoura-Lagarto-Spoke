@@ -1,4 +1,4 @@
-const playerScoreEL = document.getElementById('player-score');
+const playerScoreEl = document.getElementById('player-score');
 const playerChoiceEl = document.getElementById('player-choice');
 
 const computerScoreEl = document.getElementById('computer-score');
@@ -55,7 +55,7 @@ function updateScore(playerChoice) {
         if (choice.defeats.indexOf(computerChoice) > -1) {
             playerScoreNumber++;
             resultText.textContent = "Você Venceu!";
-            playerScoreEL.textContent = playerScoreNumber;
+            playerScoreEl.textContent = playerScoreNumber;
         } else {
             computerScoreNumber++;
             resultText.textContent = "Você Perdeu!";
@@ -73,6 +73,21 @@ function resetSelected() {
         icon.classList.remove('selected');
 
     });
+}
+
+// Resetar todo Jogo
+function resetAll() {
+    
+    playerScoreNumber = 0;
+    playerScoreEl.textContent = playerScoreNumber;
+    playerChoiceEl.textContent = '';
+    
+    computerScoreNumber = 0;
+    computerScoreEl.textContent = computerScoreNumber;
+    computerChoiceEl.textContent = '';
+    
+    resultText.textContent = "";
+    resetSelected();
 }
 
 // Escolhas aleatórias do computador
@@ -169,3 +184,6 @@ function select(playerChoice) {
     }
 
 }
+
+// Ao ler a página deixar tudo zerado
+resetAll() ;
