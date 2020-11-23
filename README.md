@@ -1,3 +1,6 @@
+<div align="center">
+<img src="/Interface.PNG"></img>
+</div>
 # Jogo: Pedra Papel Tesoura Lagarto Spoke
 Pedra Papel Tesoura Lagarto Spoke 'e um jogo inspirado no jogo tradicional: Pedra papel tesoura.
 A minha primeira interação com o jogo foi durante um episódio da série Big Bang Theory! Nos arquivos, deixo um link para a parte onde Sheldon introduz o jogo.
