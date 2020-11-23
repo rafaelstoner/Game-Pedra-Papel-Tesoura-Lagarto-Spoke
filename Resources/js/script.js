@@ -1,10 +1,10 @@
 const playerScoreEL = document.getElementById('player-score');
 const playerChoiceEl = document.getElementById('player-choice');
 
-const computerScoreEL = document.getElementById('computer-score');
+const computerScoreEl = document.getElementById('computer-score');
 const computerChoiceEl = document.getElementById('computer-choice');
 
-const resulText = document.getElementById('result');
+const resultText = document.getElementById('result');
 
 const playerRock = document.getElementById('player-rock');
 const playerPaper = document.getElementById('player-paper');
@@ -18,37 +18,59 @@ const computerScissor = document.getElementById('computer-scissor');
 const computerLizard = document.getElementById('computer-lizard');
 const computerSpock = document.getElementById('computer-spock');
 
+let playerScoreNumber = 0;
+let computerScoreNumber = 0;
+let computerChoice = '';
+
 const allGameIcons = document.querySelectorAll('.far');
 
 const choices = {
-    rock: {
-        name: 'Rock',
-        defeats: ['scissors', 'lizard']
+    Pedra: {
+        name: 'Pedra',
+        defeats: ['Tesoura', 'Lagarto']
     },
-    paper: {
-        name: 'Paper',
-        defeats: ['rock', 'spock']
+    Papel: {
+        name: 'Papel',
+        defeats: ['Pedra', 'Spock']
     },
-    scissors: {
-        name: 'Scissors',
-        defeats: ['paper', 'lizard']
+    Tesoura: {
+        name: 'Tesoura',
+        defeats: ['Papel', 'Lagarto']
     },
-    lizard: {
-        name: 'Lizard',
-        defeats: ['paper', 'spock']
+    Lagarto: {
+        name: 'Lagarto',
+        defeats: ['Papel', 'Spock']
     },
-    spock: {
+    Spock: {
         name: 'Spock',
-        defeats: ['scissors', 'rock']
+        defeats: ['Tesoura', 'Pedra']
     },
 };
 
-let computerChoice = '';
+function updateScore(playerChoice) {
+    if (playerChoice === computerChoice) {
+        resultText.textContent = "Foi um empate!";
+    } else {
+        const choice = choices[playerChoice];
+        if (choice.defeats.indexOf(computerChoice) > -1) {
+            playerScoreNumber++;
+            resultText.textContent = "Você Venceu!";
+            playerScoreEL.textContent = playerScoreNumber;
+        } else {
+            computerScoreNumber++;
+            resultText.textContent = "Você Perdeu!";
+            computerScoreEl.textContent = computerScoreNumber;
+        }
+    }
+
+}
+
+
 
 // Resetar os icones selecionados
 function resetSelected() {
     allGameIcons.forEach((icon) => {
-        icon.classList.remove('selected')
+        icon.classList.remove('selected');
 
     });
 }
@@ -70,7 +92,7 @@ function computerRandomChoice() {
     } else {
         computerChoice = 'Spock';
     }
-    
+
 }
 
 // Passando A seleção do computador e dando estilo a seleção
@@ -107,11 +129,12 @@ function displayComputerChoice() {
 
 
 //Chamar as funções para processar a vez (de jogar)
-function checkResult() {
+function checkResult(playerChoice) {
     resetSelected();
     computerRandomChoice();
     displayComputerChoice();
-    
+    updateScore(playerChoice);
+
 }
 
 // Passando A seleção do jogador e dando estilo a seleção
@@ -119,7 +142,7 @@ function checkResult() {
 function select(playerChoice) {
     // Dar estilo a icone selecionado e atualizar a seleção
 
-    checkResult();
+    checkResult(playerChoice);
     switch (playerChoice) {
         case "Pedra":
             playerRock.classList.add('selected');
