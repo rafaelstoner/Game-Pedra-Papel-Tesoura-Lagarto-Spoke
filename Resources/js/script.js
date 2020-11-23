@@ -3,6 +3,8 @@ import {
     stopConfetti,
     removeConfetti
 } from '/Vendors/js/confetti.js';
+
+
 const playerScoreEl = document.getElementById('player-score');
 const playerChoiceEl = document.getElementById('player-choice');
 
