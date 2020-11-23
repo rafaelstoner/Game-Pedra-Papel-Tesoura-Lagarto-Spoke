@@ -1,3 +1,6 @@
+## Jogar
+https://rafaelstoner.github.io/Game-Pedra-Papel-Tesoura-Lagarto-Spoke/
+
 <div align="center">
 <img src="/Interface.PNG"></img>
 </div>
@@ -7,8 +10,6 @@ A minha primeira interação com o jogo foi durante um episódio da série Big B
 
 
 
-## Jogar
-https://rafaelstoner.github.io/Game-Pedra-Papel-Tesoura-Lagarto-Spoke/
 
 
 ## Desenvolvimento do Jogo
