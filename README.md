@@ -8,7 +8,7 @@ A minha primeira interação com o jogo foi durante um episódio da série Big B
 
 
 ## Jogar
-https://rafaelstoner.github.io/Stoner-s-Food/
+https://rafaelstoner.github.io/Game-Pedra-Papel-Tesoura-Lagarto-Spoke/
 
 
 ## Desenvolvimento do Jogo
@@ -17,9 +17,9 @@ O jogo foi desenvolvido apenas usando HTML, CSS para a UI e Javascrip para as fu
 
 
 ## Tecnologias usadas
-HTML
-CSS
-Javascript
+HTML <br>
+CSS <br>
+Javascript <br>
 
 # Criador
 Rafael Stoner
@@ -28,8 +28,8 @@ Rafael Stoner
 ## Contribuir
 Pode contribuir livremente nesse jogo! 
 
-#Contribuidores 
-1- Criador: Rafael Stoner 
+# Contribuidores 
+1- Criador: Rafael Stoner <br>
 2- Nome_Contribuidor : Funcionalidade Adicionada
 
 ## Permição de uso
