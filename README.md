@@ -6,16 +6,16 @@ https://rafaelstoner.github.io/Game-Pedra-Papel-Tesoura-Lagarto-Spoke/
 </div>
 
 # Regras 
-Tesoura corta papel
-Papel cobre pedra
-Pedra esmaga lagarto
-Lagarto envenena Spock
-Spock esmaga (ou derrete) tesoura
-Tesoura decapita lagarto
-Lagarto come papel
-Papel refuta Spock
-Spock vaporiza pedra
-Pedra quebra tesoura
+Tesoura corta papel <br>
+Papel cobre pedra <br>
+Pedra esmaga lagarto <br>
+Lagarto envenena Spock <br>
+Spock esmaga (ou derrete) tesoura <br>
+Tesoura decapita lagarto <br>
+Lagarto come papel <br>
+Papel refuta Spock <br>
+Spock vaporiza pedra <br>
+Pedra quebra tesoura <br>
 
 # Jogo:
 ## Pedra Papel Tesoura Lagarto Spoke
