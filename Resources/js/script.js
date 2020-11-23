@@ -1,4 +1,8 @@
-import {startConfetti, stopConfetti, removeConfetti} from '/Vendors/js/confetti.js' ;
+import {
+    startConfetti,
+    stopConfetti,
+    removeConfetti
+} from '/Vendors/js/confetti.js';
 const playerScoreEl = document.getElementById('player-score');
 const playerChoiceEl = document.getElementById('player-choice');
 
@@ -81,15 +85,15 @@ function resetSelected() {
 
 // Resetar todo Jogo
 function resetAll() {
-    
+
     playerScoreNumber = 0;
     playerScoreEl.textContent = playerScoreNumber;
     playerChoiceEl.textContent = '';
-    
+
     computerScoreNumber = 0;
     computerScoreEl.textContent = computerScoreNumber;
     computerChoiceEl.textContent = '';
-    
+
     resultText.textContent = "";
     resetSelected();
 }
@@ -192,4 +196,4 @@ function select(playerChoice) {
 window.select = select;
 
 // Ao ler a página deixar tudo zerado
-resetAll() ;
+resetAll();
