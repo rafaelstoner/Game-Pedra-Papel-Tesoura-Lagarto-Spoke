@@ -4,7 +4,21 @@ https://rafaelstoner.github.io/Game-Pedra-Papel-Tesoura-Lagarto-Spoke/
 <div align="center">
 <img src="/Interface.PNG"></img>
 </div>
-# Jogo: Pedra Papel Tesoura Lagarto Spoke
+
+# Regras 
+Tesoura corta papel
+Papel cobre pedra
+Pedra esmaga lagarto
+Lagarto envenena Spock
+Spock esmaga (ou derrete) tesoura
+Tesoura decapita lagarto
+Lagarto come papel
+Papel refuta Spock
+Spock vaporiza pedra
+Pedra quebra tesoura
+
+# Jogo:
+## Pedra Papel Tesoura Lagarto Spoke
 Pedra Papel Tesoura Lagarto Spoke 'e um jogo inspirado no jogo tradicional: Pedra papel tesoura.
 A minha primeira interação com o jogo foi durante um episódio da série Big Bang Theory! Nos arquivos, deixo um link para a parte onde Sheldon introduz o jogo.
 
