@@ -2,7 +2,7 @@ import {
     startConfetti,
     stopConfetti,
     removeConfetti
-} from '/Vendors/js/confetti.js';
+} from './vendors/js/confetti.js';
 
 
 const playerScoreEl = document.getElementById('player-score');
