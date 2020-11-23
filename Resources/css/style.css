@@ -64,7 +64,8 @@ h2 {
     color: #1f0da8;
     cursor: pointer;
 }
-#player .selected {
+#player .selected, 
+#computer .selected {
     color: black;
 }
 
